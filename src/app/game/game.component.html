@@ -1,0 +1,17 @@
+<div
+ class="wrapper"
+ id = {{game.id}}>
+    <img src = {{game.image}} >
+    <div
+    *ngIf="ribbon"
+    [ngClass]="{'ribbon': ribbon == true, 'ribbon-top-right': ribbon == true}">
+      <span >{{category}}</span>
+    </div>
+    <h1>{{jackpotValue}}</h1>
+    <div class="overlay">
+      <a href="#" class="icon" title="User Profile">
+        <i class="fa fa-play-circle"></i>
+      </a>
+    </div>
+
+</div>

@@ -1,0 +1,28 @@
+<div
+  class="topnav responsive"
+  id="myTopnav">
+    <a  routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Top Games</a>
+    <a  routerLink="/new-games" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">New Games</a>
+    <a  routerLink="/slots" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Slots</a>
+    <a  routerLink="/jackpots" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Jackpots</a>
+    <a  routerLink="/live" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Live</a>
+    <a  routerLink="/blackjack" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">BlackJack</a>
+    <a  routerLink="/roulette" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Roulette</a>
+    <a  routerLink="/table" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Table</a>
+    <a  routerLink="/poker" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Poker</a>
+    <a  routerLink="/other" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Other</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>

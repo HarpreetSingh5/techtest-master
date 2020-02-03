@@ -1,0 +1,23 @@
+img{
+    border-radius: 10px;
+}
+
+.content-container{
+    align-content: space-around;
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: auto;
+    padding-right: auto;
+
+}
+
+.game {
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.games-container{
+    margin-top:25px;
+    text-align: center;
+}

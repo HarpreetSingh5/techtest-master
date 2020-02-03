@@ -1,0 +1,10 @@
+<div class = "content-container">
+    <div class = "games-container">
+        <app-game
+            class = "game"
+            *ngFor="let game of games"
+            [game]="game"
+            [jackpot]="jackpots">
+        </app-game>
+    </div>
+</div>
