@@ -10,7 +10,10 @@ import {Jackpot} from '../models/Jackpot';
   styleUrls: ['./game.component.css']
 })
 export class GameComponent implements OnInit {
-  private jackpots:Jackpot[];
+
+  public games: Game[];
+  public jackpots: Jackpot[];
+  
   jackpotValue:number;
   @Input() game:Game;
   @Input() jackpot:Jackpot[];

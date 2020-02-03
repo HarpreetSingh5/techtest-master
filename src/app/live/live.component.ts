@@ -10,8 +10,8 @@ import {Jackpot} from '../models/Jackpot';
 })
 export class LiveComponent implements OnInit {
 
-  private games: Game[];
-  private jackpots: Jackpot[];
+  public games: Game[];
+  public jackpots: Jackpot[];
   d: Game;
 
   constructor( private apiServicec: ApiService) { }

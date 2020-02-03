@@ -10,8 +10,8 @@ import {Jackpot} from '../models/Jackpot';
 })
 export class OtherComponent implements OnInit {
 
-  private games: Game[];
-  private jackpots: Jackpot[];
+  public games: Game[];
+  public jackpots: Jackpot[];
   virtual: Game[];
   ball: Game[];
 
@@ -24,7 +24,7 @@ export class OtherComponent implements OnInit {
       this.virtual = data.filter(cat=>{return cat.categories.includes("virtual")});
       this.ball = data.filter(cat=>{return cat.categories.includes("ball")});
       this.virtual.push(...this.ball);
-      
+
       this.games.push(...this.virtual)
       console.log(this.games);
       //console.log(this.d)

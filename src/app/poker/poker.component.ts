@@ -9,8 +9,8 @@ import {Jackpot} from '../models/Jackpot';
   styleUrls: ['./poker.component.css']
 })
 export class PokerComponent implements OnInit {
-  private games: Game[];
-  private jackpots: Jackpot[];
+  public games: Game[];
+  public jackpots: Jackpot[];
   d: Game;
 
   constructor( private apiServicec: ApiService) { }

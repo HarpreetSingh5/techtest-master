@@ -11,8 +11,8 @@ import {Merged} from '../models/merged';
 })
 export class ContentComponent implements OnInit {
 
-  private games: Game[];
-  private jackpots: Jackpot[];
+  public games: Game[];
+  public jackpots: Jackpot[];
 
   constructor( private apiServicec: ApiService) {
    }
